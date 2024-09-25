@@ -1,0 +1,626 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius:20px;
+    z-index: 1;
+    height: 10%;
+    margin: 0;
+}
+
+.logo {
+    display: flex;
+    margin: 14px 70px;
+}
+
+@media screen and (width >= 700px){
+    
+    .logo img {
+        width: 55px;
+      
+    }
+
+    .menu-mobile {
+        display: none;
+    }
+
+    .list-menu {
+        display: none;
+    }
+
+    .banner h1 {
+        font-size: 100pt;
+     }
+
+     .banner h2 {
+        font-size: 50pt;
+     }
+}
+
+@media screen and (width <= 1007px){
+
+    .banner h1 {
+        font-size: 45pt;
+     }
+
+     .banner h2 {
+        font-size: 25pt;
+     }
+}
+
+@media screen and (width < 700px){
+    
+    header {
+        flex-direction: column;
+    }
+    
+    .logo img {
+        width: 90px;
+        height: 92px;
+    }
+    .menu{
+        display: none;
+    }
+
+    .banner h1 {
+        font-size: 45pt;
+     }
+
+     .banner h2 {
+        font-size: 25pt;
+     }
+}
+
+@media screen and (width <= 400px){
+
+    .banner h1 {
+        font-size: 35pt;
+     }
+
+     .banner h2 {
+        font-size: 15pt;
+     }
+}
+
+.menu {
+    margin-left: auto;
+}
+
+.menu ul{
+    display: flex;
+    align-items: center;
+    padding: 13px 20px;
+    margin: 0;
+    margin-right: 80px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    opacity: 80%;
+}
+
+.menu li {
+    display: inline;
+    margin: 0px 12px;
+    font-size: 10pt;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    color: #FDD329;
+}
+
+.menu-mobile {
+    margin-top: 120px;
+    background: #fff;
+    height: 0%;
+    overflow: hidden;
+    position: fixed;
+    transition: 0.4s;
+    z-index: 99999;
+}
+
+.overlay-menu {
+    background: #000000a7;
+    padding: 0;
+    margin: 0;
+    margin-top: 90px;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 88888;
+    display: none;
+}
+
+.menu-mobile.open-menu {
+    height: 36%;
+    margin-top: 90px;
+}
+
+.menu-mobile.menu-mobile.open-menu ~ .overlay-menu{
+    display: block;
+}
+
+.menu-mobile ul {
+    margin: auto;
+    padding: 0;
+    width: 200px; 
+}
+
+.menu-mobile li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12pt;
+    width: 130px;
+    padding: 10px 34px;
+    margin: 0;
+    font-size: 10pt;
+}
+
+.menu-mobile li:hover {
+    background: #FDD329;
+    color: beige;
+}
+
+.btn-fechar {
+    text-align: center;
+    padding-top: 12px;
+}
+
+.list-menu {
+    text-align: center;
+    color: #FDD329;
+    font-size: 18pt;
+    margin-top: -17px;
+    margin-bottom: 3px;
+}
+
+.list-menu i:hover {
+    color: #000000;
+}
+
+.btn-fechar i{
+    color: #FDD329;
+    font-size: 16pt;
+}
+
+#close-circle-fill {
+    display: none;
+}
+
+#close-circle:hover + #close-circle-fill {
+    display: block;
+}
+
+#close-circle:hover {
+    display: none;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(40%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 1s;
+}
+
+main {  
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner {
+    display: flex;
+    height: 90vh;
+    overflow: hidden;
+    z-index: 0;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+.banner img {
+    position: absolute;
+    width: 98%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+    border-radius: 80px;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 140px;
+    width: 50%;
+    height: 250px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 8px;
+    z-index: 1;    
+}
+
+.titulo #t {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin-left: 80px;
+    margin-top: 80px;
+}
+
+.titulo #t h1, .titulo #t h2 {
+    font-family: "Inter", system-ui;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 78%;
+    font-size: 83pt;
+    margin: 0;
+}
+
+.titulo #t h1 {
+    color: #fdd329b9;
+}
+
+.titulo #t h2 {
+    margin-left: 108px;
+    color: transparent; /* Mantém o interior transparente */
+    -webkit-text-stroke: 2px rgba(255, 255, 255, 0.747); /* Aplica a borda branca */
+    background-color: transparent; /* Fundo transparente */
+}
+
+.titulo #t p {
+    color: #ffffff;
+    font-family: "Inter", system-ui;
+    font-size: 9pt;
+    text-align: justify;
+    font-weight: 300;
+    margin-left: 25px;
+    width: 520px;
+    margin-top: 40px;
+    opacity: 80%;
+}
+
+.describe{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+    width: 50%;
+    padding: 50px 40px;
+    margin-right: 50px;
+}
+
+.describe .benefs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    font-family: "Inter", system-ui;
+}
+
+.describe .benefs h4{
+    color: #e6e3e3;
+    background: #171717;
+    border-radius: 40px;
+    padding: 12px 40px;
+    font-size: 9pt;
+    font-weight: 200;
+    margin: 3px;
+    width: 200px;
+}
+
+.describe .benefs h4 i {
+    font-size: 11pt;
+    margin-right: 7px;
+}
+
+.describe button {
+    background: #FDD329;
+    color: #fff;
+    border: 2px solid #FDD329;
+    border-radius: 40px;
+    padding: 17px 20px;
+    font-weight: 900;
+    font-size: 11pt;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    width: 200px;
+    margin: 0;
+    margin-top: 14px;
+}
+
+.describe button:hover {
+    background: #fdd32900;
+    border: 2px solid #FDD329;
+}
+
+.describe button i {
+    margin-left: 5px;
+    font-size: 9pt;
+}
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 440px;
+    font-family: "Inter", system-ui;
+    margin-bottom: 100px;
+}
+
+.about .texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.about .texto h1, p, button {
+    margin-left: 120px;
+}
+
+.about .texto h1{
+    font-size: 52pt;
+    margin-bottom: 30px;
+    color: #FDD329;
+    font-weight: 800;
+}
+
+.about .texto p{
+    width: 460px;
+    font-size: 9pt;
+    font-weight: 200;
+    text-align: justify;
+    
+}
+
+.about .texto button {
+    border: 2px solid #FDD329;
+    background: #FDD329;
+    border-radius: 20px;
+    padding: 12px 0px;
+    font-weight: 900;
+    font-size: 11pt;
+    margin-top: 14px;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    width: 120px;
+    color: #fff;
+}
+
+.about .texto button:hover {
+    background: #fdd32900;
+    color: #d4b021;
+}
+
+.about .about-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background: #FDD329;
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+    height: 405px;
+    margin-left: 70px;
+}
+
+.about .about-items .item {
+    display: flex;
+    align-items: center;
+    width: 35%;
+    height: 105px;
+    background: #ffffff;
+    border-radius: 40px;
+    margin: 10px;
+    padding: 15px 19px;   
+}
+
+.about .about-items .item:first-of-type {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 50px -12px;
+}
+
+.about .about-items .item:last-of-type {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.about .about-items .item div {
+    display: flex;
+    flex-direction: column;
+    font-family: "Inter", system-ui;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+.about .about-items .item img {
+    width: 26%;
+    margin: 10px 15px;
+}
+
+.about .about-items .item h2 {
+    font-size: 13pt;
+}
+
+.about .about-items .item p {
+    font-size: 8pt;
+    margin: 0;
+    font-weight: 300;
+    color: #000000ea;
+    width: 130px;
+}
+
+.servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    background: #FDD329;
+    height: 340px;
+    margin-bottom: 70px;
+    border-top-left-radius: 300px;
+    border-top-right-radius: 300px;
+}
+
+.servicos h1 {
+    font-family: "Inter", system-ui;
+    font-size: 44pt;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.servicos .servs {
+    display: flex;
+}
+
+.servicos .servs div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 12px;
+    width: 130px;
+    height: 130px;
+    color: #edc527;
+    background-color: #f9f9f9;
+    font-family: "Roboto", sans-serif;
+}
+
+.servicos .servs div p {
+    text-align: center;
+    font-size: 10pt;
+    width: 85px;
+    margin: 2px;
+    color: #edc527;
+}
+
+.servicos .servs div i {
+    font-size: 16pt;
+}
+
+
+.transportes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-bottom: 60px;
+}
+
+.transportes h1 {
+    font-size: 44pt;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 120px;
+    margin-bottom: 80px;
+    color: #FDD329;
+    font-family: "Inter", system-ui;
+}
+
+.transportes .onibus{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    margin-bottom: 100px;
+}
+
+.transportes .onibus .bus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    height: 290px;
+    margin: 10px;
+    background: #fff;
+    overflow: hidden;
+    background: #FDD329;
+    border-radius: 40px;
+}
+
+.transportes .onibus .bus img {
+    width: 100%;
+    filter: brightness(0.9);
+}
+
+.transportes .onibus .bus .bus-describe {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", system-ui;
+    color: #ffffff;   
+}
+
+.transportes .onibus .bus .bus-describe h4 {
+    font-size: 12pt;
+    margin: 0;
+    font-weight: 600;
+}
+
+.transportes .onibus .bus .bus-describe button{
+    border: 2px solid #ffffff;
+    background: #ffffff;
+    width: 80px;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-family: "Roboto", sans-serif;
+    color: #FDD329;
+    font-weight: 500;
+    font-size: 8pt;
+    margin: 0;
+    margin-top: 15px;
+}
+
+.transportes .onibus .bus .bus-describe button:hover {
+    background: #ffffff00;   
+    color: #ffffff;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    background: #FDD329;
+    color: #fff;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 50px;
+}
+
+footer img {
+    width: 4%;
+    height: 43px;
+    margin-left: -140px;
+}
+
+footer p {
+    font-family: "Roboto", sans-serif;
+    font-size: 7pt;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+footer div i {
+    font-size: 17pt;
+    margin: 10px;
+}
+
+footer div i:hover {
+    color: #000000;
+}
