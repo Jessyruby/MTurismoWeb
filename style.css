@@ -115,7 +115,7 @@ header {
 }
 
 .menu li:hover {
-    color: #FDD329;
+    color: #f98404;
 }
 
 .menu-mobile {
@@ -167,7 +167,7 @@ header {
 }
 
 .menu-mobile li:hover {
-    background: #FDD329;
+    background: #FF6E0B;
     color: beige;
 }
 
@@ -178,7 +178,7 @@ header {
 
 .list-menu {
     text-align: center;
-    color: #FDD329;
+    color: #FF6E0B;
     font-size: 18pt;
     margin-top: -17px;
     margin-bottom: 3px;
@@ -189,7 +189,7 @@ header {
 }
 
 .btn-fechar i{
-    color: #FDD329;
+    color: #FF6E0B;
     font-size: 16pt;
 }
 
@@ -272,7 +272,7 @@ main {
 }
 
 .titulo #t h1 {
-    color: #fdd329b9;
+    color: #fc9930a2;
 }
 
 .titulo #t h2 {
@@ -329,9 +329,9 @@ main {
 }
 
 .describe button {
-    background: #FDD329;
+    background: #fc9a30;
     color: #fff;
-    border: 2px solid #FDD329;
+    border: 2px solid #fc9a30;
     border-radius: 40px;
     padding: 17px 20px;
     font-weight: 900;
@@ -345,7 +345,7 @@ main {
 
 .describe button:hover {
     background: #fdd32900;
-    border: 2px solid #FDD329;
+    border: 2px solid #fc9a30;
 }
 
 .describe button i {
@@ -374,7 +374,7 @@ main {
 .about .texto h1{
     font-size: 52pt;
     margin-bottom: 30px;
-    color: #FDD329;
+    color: #fc9a30;
     font-weight: 800;
 }
 
@@ -387,8 +387,8 @@ main {
 }
 
 .about .texto button {
-    border: 2px solid #FDD329;
-    background: #FDD329;
+    border: 2px solid #fc9a30;
+    background: #fc9a30;
     border-radius: 20px;
     padding: 12px 0px;
     font-weight: 900;
@@ -402,7 +402,7 @@ main {
 
 .about .texto button:hover {
     background: #fdd32900;
-    color: #d4b021;
+    color: #fc9a30;
 }
 
 .about .about-items {
@@ -410,7 +410,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-    background: #FDD329;
+    background: #fc9a30;
     border-top-left-radius: 200px;
     border-bottom-left-radius: 200px;
     height: 405px;
@@ -462,15 +462,17 @@ main {
 }
 
 .servicos {
+    background: #fc9a30;
+    height: 800px;
+}
+
+.servicos, .transportes {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-top-left-radius: 400px;
+    border-top-right-radius: 400px;
     padding-top: 30px;
-    background: #FDD329;
-    height: 340px;
-    margin-bottom: 70px;
-    border-top-left-radius: 300px;
-    border-top-right-radius: 300px;
 }
 
 .servicos h1 {
@@ -495,17 +497,17 @@ main {
     margin: 12px;
     width: 130px;
     height: 130px;
-    color: #edc527;
+    color: #f9af61;
     background-color: #f9f9f9;
     font-family: "Roboto", sans-serif;
 }
 
 .servicos .servs div p {
     text-align: center;
-    font-size: 10pt;
+    font-size: 9pt;
     width: 85px;
-    margin: 2px;
-    color: #edc527;
+    margin: 4px;
+    color: #f9af61;
 }
 
 .servicos .servs div i {
@@ -514,20 +516,18 @@ main {
 
 
 .transportes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 20px;
-    margin-bottom: 60px;
+    background: #fcb162;
+    height: 680px;
+    margin-top: -420px;
 }
 
 .transportes h1 {
     font-size: 44pt;
     text-transform: uppercase;
     font-weight: 800;
-    margin-top: 120px;
+    margin-top: 80px;
     margin-bottom: 80px;
-    color: #FDD329;
+    color: #fff;
     font-family: "Inter", system-ui;
 }
 
@@ -536,7 +536,7 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     width: 90%;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 }
 
 .transportes .onibus .bus {
@@ -544,17 +544,16 @@ main {
     flex-direction: column;
     align-items: center;
     width: 20%;
-    height: 290px;
+    height: 260px;
     margin: 10px;
     background: #fff;
     overflow: hidden;
-    background: #FDD329;
+    background: #ffffff;
     border-radius: 40px;
 }
 
 .transportes .onibus .bus img {
     width: 100%;
-    filter: brightness(0.9);
 }
 
 .transportes .onibus .bus .bus-describe {
@@ -564,32 +563,47 @@ main {
     justify-content: center;
     align-items: center;
     font-family: "Inter", system-ui;
-    color: #ffffff;   
+    color: #000000;   
 }
 
 .transportes .onibus .bus .bus-describe h4 {
-    font-size: 12pt;
+    font-size: 11pt;
     margin: 0;
-    font-weight: 600;
+    font-weight: 500;
+    margin-top: 10px;
 }
 
 .transportes .onibus .bus .bus-describe button{
-    border: 2px solid #ffffff;
-    background: #ffffff;
+    border: none;
+    background: #D9D9D9;
     width: 80px;
+    height: 4px;
     border-radius: 20px;
-    padding: 5px 10px;
-    font-family: "Roboto", sans-serif;
-    color: #FDD329;
-    font-weight: 500;
-    font-size: 8pt;
     margin: 0;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .transportes .onibus .bus .bus-describe button:hover {
-    background: #ffffff00;   
-    color: #ffffff;
+    background: #fcb162;   
+}
+
+.selecao {
+    background: #fff;
+    padding: 1px;
+    border-radius: 20px;
+    display: flex;
+}
+
+.selecao .circle {
+    background: #D9D9D9;
+    border-radius: 50%;
+    width: 11px;
+    height: 11px;
+    margin: 3px;
+}
+
+.selecao #circle1 {
+    background: #fcb162; 
 }
 
 footer {
@@ -597,10 +611,12 @@ footer {
     justify-content: space-around;
     align-items: center;
     padding: 15px;
-    background: #FDD329;
-    color: #fff;
+    background: #fff;
+    color: #fcb162;
     border-top-left-radius: 30px;
     border-top-right-radius: 50px;
+    margin-top: -45px;
+    z-index: 1;
 }
 
 footer img {
@@ -612,8 +628,9 @@ footer img {
 footer p {
     font-family: "Roboto", sans-serif;
     font-size: 7pt;
-    font-weight: 300;
-    color: #ffffff;
+    font-weight: 500;
+    color: #fcb162;
+    margin-left: 220px;
 }
 
 footer div i {
