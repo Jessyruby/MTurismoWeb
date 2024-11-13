@@ -1,0 +1,175 @@
+header {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius:20px;
+    z-index: 1;
+    margin: 0;
+}
+
+.logo {
+    display: flex;
+    margin: 14px 70px;
+}
+
+.list-menu {
+    display: none;
+}
+
+.banner h1 {
+    font-size: 100pt;
+ }
+
+ .banner h2 {
+    font-size: 50pt;
+ }
+
+.menu {
+    margin-left: auto;
+}
+
+.menu ul{
+    display: flex;
+    align-items: center;
+    padding: 13px 20px;
+    margin: 0;
+    margin-right: 80px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    opacity: 80%;
+}
+
+.menu li {
+    display: inline;
+    margin: 0px 12px;
+    font-size: 10pt;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    color: #f98404;
+}
+
+.menu-mobile {
+    margin-top: 120px;
+    background: #fff;
+    height: 0%;
+    overflow: hidden;
+    position: fixed;
+    transition: 0.4s;
+    z-index: 99999;
+}
+
+.overlay-menu {
+    background: #000000a7;
+    padding: 0;
+    margin: 0;
+    margin-top: 90px;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 88888;
+    display: none;
+}
+
+.menu-mobile.open-menu {
+    height: 36%;
+    margin-top: 90px;
+}
+
+.menu-mobile.menu-mobile.open-menu ~ .overlay-menu{
+    display: block;
+}
+
+.menu-mobile ul {
+    margin: auto;
+    padding: 0;
+    width: 200px; 
+}
+
+.menu-mobile li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12pt;
+    width: 130px;
+    padding: 10px 34px;
+    margin: 0;
+    font-size: 10pt;
+}
+
+.menu-mobile li:hover {
+    background: #FF6E0B;
+    color: beige;
+}
+
+.btn-fechar {
+    text-align: center;
+    padding-top: 12px;
+}
+
+.list-menu {
+    text-align: center;
+    color: #FF6E0B;
+    font-size: 18pt;
+    margin-top: -17px;
+    margin-bottom: 3px;
+}
+
+.list-menu i:hover {
+    color: #000000;
+}
+
+.btn-fechar i{
+    color: #FF6E0B;
+    font-size: 16pt;
+}
+
+#close-circle-fill {
+    display: none;
+}
+
+#close-circle:hover + #close-circle-fill {
+    display: block;
+}
+
+#close-circle:hover {
+    display: none;
+}
+
+@media (min-width: 769px) {
+
+    header {
+        height: 10%;
+    }
+
+    .logo img {
+        width: 55px;
+    }
+
+    .menu-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 769px) {
+
+    header {
+        flex-direction: column;
+        height: 12%;
+    }
+
+    .logo img {
+        width: 55px;
+        margin-bottom: 10px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .list-menu {
+        display: block;
+    }
+}

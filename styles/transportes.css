@@ -1,0 +1,132 @@
+.transportes {
+    background: #fcb162;
+    height: 680px;
+    margin-top: -420px;
+}
+
+.transportes h1 {
+    font-size: 44pt;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    color: #fff;
+    font-family: "Inter", system-ui;
+}
+
+.transportes .onibus{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    margin-bottom: 60px;
+}
+
+.transportes .onibus .bus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    height: 260px;
+    margin: 10px;
+    background: #fff;
+    overflow: hidden;
+    background: #ffffff;
+    border-radius: 40px;
+}
+
+.transportes .onibus .bus img {
+    width: 100%;
+}
+
+.transportes .onibus .bus .bus-describe {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", system-ui;
+    color: #000000;   
+}
+
+.transportes .onibus .bus .bus-describe h4 {
+    font-size: 11pt;
+    margin: 0;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.transportes .onibus .bus .bus-describe button{
+    border: none;
+    background: #D9D9D9;
+    width: 80px;
+    height: 4px;
+    border-radius: 20px;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.transportes .onibus .bus .bus-describe button:hover {
+    background: #fcb162;   
+}
+
+.selecao {
+    background: #fff;
+    padding: 1px;
+    border-radius: 20px;
+    display: flex;
+}
+
+.selecao .circle {
+    background: #D9D9D9;
+    border-radius: 50%;
+    width: 11px;
+    height: 11px;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.selecao #circle1 {
+    background: #fcb162; 
+}
+
+@media (min-width: 769px) {
+
+}
+
+@media (max-width: 769px) {
+    .transportes {
+        height: 33.5%;
+    }
+
+    .transportes h1 {
+        font-size: 20pt;
+        margin-top: 50px;
+        margin-bottom: 24px;
+    }
+    
+    .transportes .onibus {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+        height: 100%;
+    }
+
+    .transportes .onibus .bus {
+        width: 60%;
+        height: 30%;
+        margin: 10px;
+    }
+
+    .transportes .onibus .bus .bus-describe h4 {
+        font-size: 8pt;
+    }
+
+    .transportes .onibus .bus .bus-describe button {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+    .selecao {
+        margin-bottom: 80px;
+    }
+}

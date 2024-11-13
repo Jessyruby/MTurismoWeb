@@ -1,0 +1,214 @@
+.banner {
+    display: flex;
+    height: 90vh;
+    overflow: hidden;
+    z-index: 0;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+.banner img {
+    position: absolute;
+    width: 98%;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 140px;
+    width: 50%;
+    height: 250px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 8px;
+    z-index: 1;    
+}
+
+.titulo #t {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.titulo #t h1, .titulo #t h2 {
+    font-family: "Inter", system-ui;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0;
+}
+
+.titulo #t h1 {
+    color: #fc9930a2;
+}
+
+.titulo #t h2 {
+    margin-left: 108px;
+    color: transparent; /* Mantém o interior transparente */
+    -webkit-text-stroke: 2px rgba(255, 255, 255, 0.747); /* Aplica a borda branca */
+    background-color: transparent; /* Fundo transparente */
+}
+
+.titulo #t p {
+    color: #ffffff;
+    font-family: "Inter", system-ui;
+    text-align: justify;
+    font-weight: 300;
+    opacity: 80%;
+    font-size: 9pt;
+    margin-left: 25px;
+    width: 520px;
+    margin-top: 40px;
+}
+
+.describe{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 40px;
+}
+
+.describe .benefs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    font-family: "Inter", system-ui;
+}
+
+.describe .benefs h4{
+    color: #e6e3e3;
+    background: #171717;
+    border-radius: 40px;
+    font-weight: 200;
+}
+
+.describe .benefs h4 i {
+    margin-right: 7px;
+}
+
+.describe button {
+    background: #fc9a30;
+    color: #fff;
+    border: 2px solid #fc9a30;
+    border-radius: 40px;
+    font-weight: 900;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    margin: 0;
+    margin-top: 14px;
+}
+
+.describe button:hover {
+    background: #fdd32900;
+    border: 2px solid #fc9a30;
+}
+
+.describe button i {
+    margin-left: 5px;
+}
+
+@media (min-width: 769px) {
+
+    .banner img {
+        border-radius: 80px;
+        height: 100%;
+    }
+
+    .titulo #t {
+        margin-left: 80px;
+        margin-top: 80px;
+    }
+
+    .titulo #t h1, .titulo #t h2 {
+        line-height: 78%;
+        font-size: 83pt;
+    }
+
+    .describe{
+        align-items: end;
+        justify-content: end;
+        margin-right: 50px;
+        width: 50%;
+    }
+
+    .describe .benefs h4{
+        padding: 12px 40px;
+        font-size: 9pt;
+        margin: 3px;
+        width: 200px;
+    }
+    
+    .describe .benefs h4 i {
+        font-size: 11pt;
+    }
+
+    .describe button {
+        padding: 17px 20px;
+        font-size: 11pt;
+        width: 200px;
+        margin: 0;
+        margin-top: 14px;
+    }
+    
+    .describe button i {
+        font-size: 9pt;
+    }
+}
+
+@media (max-width: 769px) {
+    .banner {
+        flex-direction: column;
+        margin-bottom: 70px;
+    }
+    .banner img {
+        border-radius: 60px;
+        height:90%;
+    }
+
+    .titulo {
+        width: 100%;
+    }
+
+    .titulo #t {
+        width: 230px;
+    }
+    
+    .titulo #t h1, .titulo #t h2 {
+        line-height: 78%;
+        font-size: 20pt;
+    }
+
+    .titulo #t p {
+      display: none;
+    }
+
+    .describe{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .describe .benefs h4{
+        padding: 12px 10px;
+        font-size: 7pt;
+        margin: 3px;
+        width: 150px;
+    }
+    
+    .describe .benefs h4 i {
+        font-size: 7pt;
+    }
+
+    .describe button {
+        padding: 10px 3px;
+        font-size: 7pt;
+        width: 120px;
+        margin: 0;
+        margin-top: 14px;
+    }
+    
+    .describe button i {
+        font-size: 6pt;
+    }
+}

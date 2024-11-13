@@ -1,0 +1,173 @@
+.about {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 440px;
+    font-family: "Inter", system-ui;
+    margin-bottom: 100px;
+}
+
+.about .texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.about .texto h1{
+    color: #fc9a30;
+    font-weight: 800;
+}
+
+.about .texto p{
+    font-weight: 200;
+    text-align: justify; 
+}
+
+.about .texto button {
+    border: 2px solid #fc9a30;
+    background: #fc9a30;
+    border-radius: 20px;
+    font-weight: 900;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    color: #fff;
+}
+
+.about .texto button:hover {
+    background: #fdd32900;
+    color: #fc9a30;
+}
+
+.about .about-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background: #fc9a30;
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+}
+
+.about .about-items .item {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 40px; 
+}
+
+.about .about-items .item:first-of-type {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 50px -12px;
+}
+
+.about .about-items .item:last-of-type {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.about .about-items .item div {
+    display: flex;
+    flex-direction: column;
+    font-family: "Inter", system-ui;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+.about .about-items .item img {
+    width: 26%;
+    margin: 10px 15px;
+}
+
+.about .about-items .item h2 {
+    font-size: 13pt;
+}
+
+.about .about-items .item p {
+    font-size: 8pt;
+    margin: 0;
+    font-weight: 300;
+    color: #000000ea;
+    width: 130px;
+}
+
+@media (min-width: 769px) {
+
+    .about .texto h1, p, button {
+        margin-left: 120px;
+    }
+
+    .about .texto h1{
+        font-size: 52pt;
+        margin-bottom: 30px;
+    }
+    
+    .about .texto p{
+        width: 460px;
+        font-size: 9pt;
+    }
+
+    .about .texto button {
+        padding: 12px 0px;
+        font-size: 11pt;
+        margin-top: 14px;
+        width: 120px;
+    }
+
+    .about .about-items {
+        height: 405px;
+        margin-left: 70px;
+    }
+    
+    .about .about-items .item {
+        width: 35%;
+        height: 105px;
+        margin: 10px;
+        padding: 15px 19px;   
+    }
+
+}
+
+@media (max-width: 769px) {
+    
+    .about {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 260px;
+    }
+
+    .about .texto h1{
+        font-size: 20pt;
+        margin-bottom: 10px;
+    }
+    
+    .about .texto p{
+        width: 240px;
+        font-size: 8pt;
+    }
+
+    .about .texto button {
+        padding: 8px 0px;
+        font-size: 10pt;
+        margin-top: 14px;
+        width: 90px;
+    }
+
+    .about .about-items {
+        height: 405px;
+        margin-left: 20px;
+        margin-top: 70px;
+    }
+    
+    .about .about-items .item {
+        width: 70%;
+        height: 60px;
+        margin: 10px;
+        padding: 15px 19px;   
+    }
+
+    .about .about-items .item h2 {
+        font-size: 7pt;
+    }
+    
+    .about .about-items .item p {
+        font-size: 5pt;
+        width: 80px;
+    }
+}
