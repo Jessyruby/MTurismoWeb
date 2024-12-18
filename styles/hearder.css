@@ -6,6 +6,12 @@ header {
     border-bottom-right-radius:20px;
     z-index: 1;
     margin: 0;
+    position: fixed;
+    width: 100%;
+}
+
+header.rolagem {
+    box-shadow: 0px -10px 20px #000000;
 }
 
 .logo {
@@ -16,14 +22,6 @@ header {
 .list-menu {
     display: none;
 }
-
-.banner h1 {
-    font-size: 100pt;
- }
-
- .banner h2 {
-    font-size: 50pt;
- }
 
 .menu {
     margin-left: auto;
