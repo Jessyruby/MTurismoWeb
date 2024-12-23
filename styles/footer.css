@@ -26,10 +26,11 @@ footer div i {
     font-size: 17pt;
     margin: 10px;
     cursor: pointer;
+    color: #fcb162;
 }
 
 footer div i:hover {
-    color: #dc903f;
+    color: #c77823;
 }
 
 @media (min-width: 769px) {
