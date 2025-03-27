@@ -97,7 +97,7 @@
 
 @media (max-width: 769px) {
     .transportes {
-        height: 33.5%;
+        height: 1000px;
     }
 
     .transportes h1 {
@@ -115,12 +115,14 @@
 
     .transportes .onibus .bus {
         width: 60%;
-        height: 30%;
+        height: 17%;
         margin: 10px;
+        border-radius: 24px;
     }
 
     .transportes .onibus .bus .bus-describe h4 {
-        font-size: 8pt;
+        font-size: 6pt;
+        text-align: center;
     }
 
     .transportes .onibus .bus .bus-describe button {
@@ -128,6 +130,6 @@
         margin-bottom: 8px;
     }
     .selecao {
-        margin-bottom: 80px;
+        display: none;
     }
 }
